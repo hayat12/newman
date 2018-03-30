@@ -11,8 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { AuthService } from './service/auth.service';
 
-import { PaginationModule } from 'ngx-bootstrap/pagination';
-
+// import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { NgxPaginationModule } from 'ngx-pagination'
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     BrowserModule,
     HttpClientModule,
     HttpModule,
-    PaginationModule.forRoot()
+    NgxPaginationModule
   ],
   providers: [
     AuthService

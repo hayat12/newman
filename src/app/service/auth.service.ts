@@ -4,7 +4,8 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 @Injectable()
 export class AuthService {
-  url: any = 'http://192.168.0.10:8000/speedmart88/documents/';
+  // url: any = 'http://192.168.0.10:8000/speedmart88/documents/';
+  url: any = 'https://jsonplaceholder.typicode.com/posts'
   data: any;
   constructor(
     private http : Http
